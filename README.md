@@ -13,6 +13,28 @@ It uses **LangGraph-based multi-agent orchestration** and **MCP-style tool integ
 
 ---
 
+## 💼 Real-World Use Case
+
+A business wants to build an AI assistant for customer support in e-commerce.
+
+Instead of manually designing:
+
+* Architecture
+* APIs
+* Services
+* Test cases
+
+This system:
+
+1. Understands requirement
+2. Designs architecture
+3. Generates implementation plan
+4. Validates design
+5. Generates starter code
+
+👉 Reduces solution design time from days to minutes.
+
+
 ## 🧠 Key Features
 
 ### ✅ Multi-Agent Workflow
@@ -30,10 +52,37 @@ It uses **LangGraph-based multi-agent orchestration** and **MCP-style tool integ
 
 * Reviewer loop improves output
 
-### ✅ MCP-style Tool Integration
 
-* Agent invokes tools via HTTP
-* Decoupled tool execution
+## 🔌 MCP-Style Tool Integration
+
+This system follows a Model Context Protocol (MCP)-style design:
+
+* Agents do not directly call functions
+* Instead, they invoke tools via HTTP
+
+Example:
+
+Agent → POST /mcp → Tool Server → Code Generation
+
+This enables:
+
+* Decoupled architecture
+* External tool integration
+* Future extensibility (GitHub, DB, APIs)
+
+## 🎯 Why This Project Matters
+
+Most AI projects stop at chatbots or RAG.
+
+This project demonstrates:
+
+* End-to-end AI delivery lifecycle
+* Agentic orchestration
+* System design automation
+* Code generation from requirements
+
+
+
 
 ### ✅ Code Generation
 
